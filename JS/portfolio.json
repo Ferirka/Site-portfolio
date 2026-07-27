@@ -1,0 +1,177 @@
+{
+    "portfolioBlock": [
+        {
+            "id": 1,
+            "title": "Nikita.rokhlin - портфолио",
+            "description": "Мой личный сайт-портфолио - пока не окончательная версия и возможно будет перерисовываться",
+            "support": "Вы на этом сайте",
+            "card": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "JSON",
+                "Figma",
+                "UI/UX"
+            ],
+              "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/design/SQu138XC7alW24atOeEGzy/%D0%A1%D0%B0%D0%B9%D1%82-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE?node-id=496-281&m=dev&t=T9WKUYvUsF3HMl4r-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka"
+            }
+      
+        },
+        {
+            "id": 2,
+            "title": "Увильды - сайт о путешествиях",
+            "description": "Мой первый проект созданный с нуля, от рисовки в figma до верстки, тут видно что я только начинаю учится",
+            "support": "Частично готов",
+            "card": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "JSON",
+                "Figma",
+                "UI/UX"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/proto/3gsTanTIVmfyGcBcIZJexA/%D0%A3%D0%B2%D0%B8%D0%BB%D1%8C%D0%B4%D1%8B---%D1%81%D0%B0%D0%B9%D1%82-%D0%BE-%D0%BE%D0%B7%D0%B5%D1%80%D0%B5?node-id=50-2&t=VnkKNzPvseZmuvL1-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/site-travel"
+            }
+      
+        },
+        {
+            "id": 3,
+            "title": "Кофеня",
+            "description": "Мой второй проект созданный с нуля от рисовки в figma до верстки",
+            "support": "Частично готов",
+            "card": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "JSON",
+                "Figma",
+                "UI/UX"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/proto/vzRh6X5YMkM0RZRjxOKv41/%D0%9A%D0%BE%D1%84%D0%B5%D0%BD%D1%8F?node-id=187-4&t=fp72VJTlJoCh6v0o-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/coffee-house-2-version"
+            }
+      
+        },
+        {
+            "id": 4,
+            "title": "NR - FITNESS",
+            "description": "Мой третий проект созданный с нуля от рисовки в figma до верстки, тут видно что я уже пришл к своему логотипу который так-же нарисовал",
+            "support": "Частично готов",
+            "card": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "JSON",
+                "Figma",
+                "UI/UX"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/proto/XVa2r7iPByIdZdDYpY3PeH/%D0%A2%D1%80%D0%B5%D0%BD%D0%B0%D0%B6%D1%91%D1%80%D0%BA%D0%B0?node-id=143-4&t=hawaWFl3zIUCETkY-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/NR---FITNESS"
+            }
+      
+        },
+        {
+            "id": 5,
+            "title": "WantLoft",
+            "description": "Мой первый проект от реального заказчика, тут продают мебель в стиле LOFT",
+            "support": "Заморожен",
+            "card": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "PHP",
+                "JSON",
+                "Figma",
+                "UI/UX"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/proto/771nDwRdsZxtncyvLpp7lM/%D0%A5%D0%BE%D1%87%D1%83-LOFT?node-id=560-2&t=bRat8C3dJbLkfqmD-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/WantLoft"
+            }
+      
+        },
+        {
+            "id": 6,
+            "title": "Lagoona",
+            "description": "Учебный проект - Skillbox",
+            "support": "Готов",
+            "card": [
+                "HTML",
+                "CSS"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/design/tjkkfkHDXlGscyVbS3emln/Lagoona?node-id=0-1&m=dev&t=3xtsgdRxC4hv9NKM-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/Lagoona---"
+            }
+      
+        },
+        {
+            "id": 7,
+            "title": "RitmStyle",
+            "description": "Учебный проект",
+            "support": "Готов",
+            "card": [
+                "HTML",
+                "CSS"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/design/qcmKp98gPYVyHQRSvVUxrX/Templates--22.-More-on-d-e-n.info?node-id=0-1&m=dev&t=IsKBMJ3tABOlDBOa-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/RitmStyle---"
+            }
+      
+        },
+        {
+            "id": 8,
+            "title": "SAFEHOUSE",
+            "description": "Учебный проект",
+            "support": "Готов",
+            "card": [
+                "HTML",
+                "CSS"
+            ],
+            "link1": {
+                "text": "Дизайн в Figma",
+                "url": "https://www.figma.com/design/Ov0STiJjYmlglM3fwNrJEq/Landing-page---%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE-%D0%B8-%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82?node-id=0-1&m=dev&t=Ok69vXQ6TBOSy512-1"
+            },
+            "link2": {
+                "text": "GitHub",
+                "url": "https://github.com/Ferirka/SAFEHOUSE"
+            }
+      
+        }
+    ]
+}
