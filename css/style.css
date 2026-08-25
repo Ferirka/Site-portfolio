@@ -120,8 +120,6 @@ img {
 }
 
 
-
-
 /* HEADER */
 
 .header__block {
@@ -215,8 +213,8 @@ img {
         display: flex;
         justify-content: center;
         align-self: center;
-        padding: 5px 10px;
-        font-size: 2rem;
+        padding: 1rem 1rem;
+        font-size: 2.1rem;
         font-weight: 600;
         font-family: 'NotoSans';
         border: 1px solid #8F8F8F;
@@ -336,6 +334,11 @@ img {
         font-size: 2.2rem;
     }
 
+    .hero__img {
+    width: 410px;
+    max-height: 550px;
+    }
+
 
 }
 
@@ -343,7 +346,7 @@ img {
     .hero__container {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
         width: 100%;
         gap: 50px;
     }
@@ -369,6 +372,11 @@ img {
         font-weight: 400;
         font-family: 'NotoSans';
     }
+
+    .hero__img {
+    width: 330px;
+    height: 370px;
+    }
 }
 
 /* COOPERATION */
@@ -377,7 +385,7 @@ img {
     margin: 0;
     margin-bottom: 7.7rem;
     text-align: center;
-    white-space: ;
+    
     font-size: 4.8rem;
     font-weight: 700;
 }
@@ -480,8 +488,8 @@ img {
     }
 
     .cooperation__number {
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         margin-right: 3rem;
         font-size: 4rem;
     }
@@ -508,7 +516,11 @@ img {
 .price__list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
+}
+
+.price__list:last-child {
 }
 
 .price__card {
@@ -516,22 +528,19 @@ img {
     flex-direction: column;
     width: 100%;
     max-width: 420px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 32px 10px 33px;
     border: none;
     border-radius: 5px;
     background-color: #575757;
 }
 
-.price__card {
-    margin-bottom: 5.2rem;
-}
-
 .priceBlock__last {
     display: flex;
     flex-direction: column;
+   align-self: center;
     width: 100%;
-    max-width: 1043px;
+    max-width: 1260px;
     margin-bottom: 5.2rem;
     padding: 32px 40px 33px;
     border: none;
@@ -542,6 +551,7 @@ img {
 .price__heading {
     margin: 0;
     margin-bottom: 1.7rem;
+    white-space: wrap;
     font-size: 3.2rem;
     font-weight: 700;
     font-family: 'AbhayaLibre';
@@ -588,6 +598,7 @@ img {
 }
 
 .price__prepayment {
+    text-align: center;
     margin: 0;
     font-size: 3.2rem;
     font-weight: 700;
@@ -619,7 +630,7 @@ img {
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 723px;
+        max-width: 693px;
     }
 
     .price__heading {
@@ -645,7 +656,6 @@ img {
 @media (max-width: 767px) {
 
     .price__container {
-        align-items: center;
         width: 100%;
 
     }
@@ -656,10 +666,25 @@ img {
     }
 
     .priceBlock__last {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        white-space: wrap;
-        max-width: 229px;
+        max-width: 251px;
+        padding: 9px 0 10px 0;
+        height: 250px;
+    }
 
+    .price__heading-last {
+        
+        max-width: 200px;
+        font-size: 2rem;
+    }
+
+    .price__paragraph {
+        max-width: 200px;
+        font-size: 1.5rem;
+        
     }
 
     .price__prepayment {
@@ -669,20 +694,27 @@ img {
 
 /* FORM */
 
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .form__Card {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     width: 100%;
-    max-width: 1274px;
+    max-width: 1340px;
     background-color: #575757;
-    padding: 20px 40px 40px;
+    padding: 20px 0 40px;
     border-radius: 10px;
 }
 
 .form__subtitle {
-    max-width: 807px;
+    max-width: 700px;
     margin: 0;
     margin-bottom: 6.9rem;
     white-space: wrap;
@@ -731,8 +763,8 @@ img {
 
     .form__Card {
         width: 100%;
-        max-width: 685px;
-        padding: 30px 30px 40px;
+        max-width: 773px;
+        padding: 30px 0 40px;
 
     }
 
@@ -742,7 +774,7 @@ img {
     }
 
     .form__subtitle {
-        max-width: 286px;
+        max-width: 350px;
         font-size: 3.2rem;
         font-weight: 700;
         font-family: 'AbhayaLibre';
@@ -753,6 +785,14 @@ img {
     .form__container {
         width: 100%;
     }
+
+    .form__Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
 
     .form__title {
         white-space: wrap;
@@ -771,7 +811,7 @@ img {
     }
 
     .form__subtitle {
-        max-width: 210px;
+        max-width: 300px;
         font-size: 3.2rem;
         font-weight: 700;
         font-family: 'AbhayaLibre';
@@ -784,14 +824,21 @@ img {
 
 /* FOOTER */
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer__container {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
-    max-height: 376px;
+    width: 1440px;
+    height: auto;
     margin: 0;
     padding: 20px 40px 30px;
     background-color: #575757;
@@ -846,7 +893,7 @@ img {
 @media (max-width: 1023px) {
     .footer__container {
         width: 100%;
-        max-width: 768px;
+
     }
 
     .footer__nav-list {
@@ -862,7 +909,8 @@ img {
         justify-content: start;
         align-items: start;
         width: 100%;
-        max-width: 378px;
+        max-width: px;
+        height: 100%;
         white-space: wrap;
     }
 
@@ -1031,8 +1079,16 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    
 
+}
+
+.blog__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
 }
 
 .blog__card {
@@ -1040,6 +1096,7 @@ img {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    
 
 }
 
@@ -1090,3 +1147,97 @@ img {
     }
 }
 
+/* JAVA SCRIPT */ 
+
+/* ---------------- */
+
+.up__Arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+   
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    background-color: #7ECD0F;
+}
+
+.up__Arrow::after  {
+ content: "\2b06"; 
+ display: block;
+ margin-bottom: 2px;
+font-size: 2.8rem;
+text-align: center;
+ line-height: 1;
+}
+
+
+/* POLITIKA VS APPROVAL */
+
+
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+/* Модальное окно — 100% работает */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    display: none; /* по умолчанию скрыто */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-overlay.active {
+    display: flex; /* появляется при клике */
+}
+
+.modal {
+    position: relative;
+    background: #323232;
+    padding: 40px 30px;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 90%; /* чтобы не вылезало за экран */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal__item {
+    margin-bottom: 20px;
+}
+
+.modal__link {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.modal__link:hover {
+    color: #B9FF57;
+}

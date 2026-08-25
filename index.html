@@ -7,10 +7,28 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="JS/rendersCards.js" defer></script>
     <script src="JS/cardPage.js" defer></script>
+    <script src="JS/UpArrow.js" defer></script>
+    <script src="JS/modalMenu.js" defer></script>
+    <script src="JS/form.js" defer></script>
+    <link rel="icon" href="data:,">
     <title>NIKROXL</title>
 </head>
 
 <body>
+
+<!-- ===== МОДАЛЬНОЕ ОКНО ДЛЯ МЕНЮ ===== -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="modal__close" id="modalClose">✕</button>
+        <nav class="modal__nav">
+            <ul class="modal__list">
+                <li class="modal__item"><a href="/portfolio.html" class="modal__link">Портфолио</a></li>
+                <li class="modal__item"><a href="/blog.html" class="modal__link">Мой блог</a></li>
+                <li class="modal__item"><a href="/contact.html" class="modal__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
     <header class="header">
         <div class="container header__container">
@@ -43,7 +61,7 @@
             <div class="container hero__container">
                 <div class="hero__block">
                     <span class="hero__subtitle">Всем привет</span>
-                    <h3 class="hero__title">Я начинающий веб-разработчик</h3>
+                    <h1 class="hero__title">Я начинающий веб-разработчик</h1>
                     <span class="hero__subtitle">Создаю сайты - создаю ваш бренд</span>
                     <div class="button__hero">
                         <a href="" class="btn__main">Обратная связь</a>
@@ -66,7 +84,7 @@
                     <li class="cooperation__item">
                         <span class="cooperation__number">01</span>
                         <div class="cooperation__text">
-                            <h4 class="cooperation__title">Обсуждение</h4>
+                            <h3 class="cooperation__title">Обсуждение</h3>
                             <p class="cooperation__description">Вы рассказываете о проекте, я задаю вопросы, уточняю
                                 детали
                                 и
@@ -76,7 +94,7 @@
                     <li class="cooperation__item">
 
                         <div class="cooperation__text">
-                            <h4 class="cooperation__title">Дизайн (если нужен)</h4>
+                            <h3 class="cooperation__title">Дизайн (если нужен)</h3>
                             <p class="cooperation__description">Рисую макет в Figma. Вы смотрите, вносите правки (2
                                 правки
                                 бесплатно). Утверждаем.</p>
@@ -86,7 +104,7 @@
                     <li class="cooperation__item">
                         <span class="cooperation__number">03</span>
                         <div class="cooperation__text">
-                            <h4 class="cooperation__title">Вёрстка</h4>
+                            <h3 class="cooperation__title">Вёрстка</h3>
                             <p class="cooperation__description">«Верстаю сайт (адаптив под телефон, планшет, ПК). Вы
                                 тестируете..</p>
                         </div>
@@ -94,7 +112,7 @@
                     <li class="cooperation__item">
 
                         <div class="cooperation__text">
-                            <h4 class="cooperation__title">Финальная проверка и оплата</h4>
+                            <h3 class="cooperation__title">Финальная проверка и оплата</h3>
                             <p class="cooperation__description">Вносим последние правки, вы принимаете работу,
                                 оплачиваете
                                 остаток.</p>
@@ -116,7 +134,7 @@
                 </div>
 
                 <article class="priceBlock__last">
-                    <h3 class="price__heading">Индивидуальный пакет</h3>
+                    <h3 class="price__heading price__heading-last">Индивидуальный пакет</h3>
                     <p class="price__paragraph card__item">Если у вас нестандартная задача или нужна помощь с тем, чего
                         нет
                         в пакетах —
@@ -175,7 +193,7 @@
                                     required>
                                 <span class="form__checkbox-text">
                                     Я принимаю условия
-                                    <a href="/privacy-policy/" target="_blank">
+                                    <a href="/privary.html" target="_blank">
                                         политики обработки персональных данных
                                     </a>
                                     и даю согласие на обработку моих данных
@@ -266,8 +284,8 @@
 
                 <!-- ===== НИЖНЯЯ ЧАСТЬ: Юридическая информация ===== -->
                 <div class="footer__legal">
-                    <a href="/privacy-policy/" class="footer__legal-link footer__text nav__link">Политика конфиденциальности</a>
-                    <a href="/agreement/" class="footer__legal-link footer__text nav__link">Пользовательское соглашение</a>
+                    <a href="/privary.html" class="footer__legal-link footer__text nav__link">Политика конфиденциальности</a>
+                    <a href="/agreement.html" class="footer__legal-link footer__text nav__link">Пользовательское соглашение</a>
                 </div>
 
 
@@ -293,6 +311,13 @@
             </nav>
         </div>
     </footer>
+
+
+
+<button class="up__Arrow" id="UpArrow">
+
+</button>
+
 
 
 </body>

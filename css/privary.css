@@ -1,0 +1,144 @@
+
+/* POLITIKA VS APPROVAL */
+
+.policy {
+            max-width: 860px;
+            margin: 60px auto;
+            padding: 40px 30px;
+            padding-bottom: 40px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+        }
+
+        .policy__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            border-bottom: 2px solid #7ECD0F;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .policy__title {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .policy__meta {
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .policy__meta strong {
+            display: block;
+            font-size: 16px;
+            color: #222;
+        }
+
+        .policy__toc {
+            background: #f8f9fa;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .policy__toc-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .policy__toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2 200px;
+        }
+
+        .policy__toc-list li {
+            margin-bottom: 4px;
+        }
+
+        .policy__toc-list a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.2s;
+        }
+
+        .policy__toc-list a:hover {
+            color: #7ECD0F;
+        }
+
+        .policy__section {
+            margin-bottom: 40px;
+        }
+
+        .policy__section h2 {
+            font-size: 22px;
+            font-weight: 700;
+            border-left: 4px solid #7ECD0F;
+            padding-left: 16px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .policy__section h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .policy__section p {
+            margin: 12px 0;
+        }
+
+        .policy__section ul, 
+        .policy__section ol {
+            padding-left: 25px;
+            margin: 10px 0 16px;
+        }
+
+        .policy__section li {
+            margin-bottom: 4px;
+        }
+
+        .policy__section .highlight {
+            background: #f1f9ed;
+            padding: 16px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #7ECD0F;
+            font-size: 15px;
+            margin: 20px 0;
+        }
+
+      
+
+        @media (max-width: 640px) {
+            .policy {
+                padding: 20px 16px;
+                margin: 20px 10px;
+            }
+            .policy__header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .policy__meta {
+                text-align: left;
+                font-size: 13px;
+            }
+            .policy__toc-list {
+                columns: 1;
+            }
+        }

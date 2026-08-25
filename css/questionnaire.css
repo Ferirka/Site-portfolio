@@ -1,0 +1,80 @@
+body {
+    background-color: #575757;
+}
+
+.questionnaire__form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+}
+
+.questionnaire__title {
+    text-align: center;
+    font-size: 6.4rem;
+    font-weight: 700;
+    font-family: 'AbhayaLibre';
+}
+
+.questionnaire__subtitle {
+    margin: 0;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'AbhayaLibre';
+    color: #B9FF57;
+}
+
+.label__heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4.4rem;
+    font-size: 3.2rem;
+    font-weight: 600;
+    font-family: 'NotoSans';
+}
+
+.questionnaire__text {
+    display: inline-block;
+    width: auto;
+    min-width: 50px;
+    max-width: 300px;
+    padding: 10px 40px 10px 10px;
+    margin-bottom: 4.9rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #323232;
+    outline: none;
+    
+}
+
+.questionnaire__text:last-child {
+    margin-bottom: 0;
+}
+
+.checkbox-group {
+display: flex;
+flex-direction: column;
+}
+
+.form__checkbox-label {
+
+}
+
+.btn__questionnaire {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 15px;
+    color: black;
+    background: linear-gradient(to bottom, #B9FF57, #7ECD0F);
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'NotoSans';
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+

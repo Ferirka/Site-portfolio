@@ -5,164 +5,462 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/questionnaire.css">
     <script src="JS/blogCards.js" defer></script>
     <script src="JS/blogPage.js" defer></script>
+    <script src="JS/UpArrow.js" defer></script>
     <title>NIKROXL</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="container header__container">
-            <div class="header__block">
-                <a href="index.html" class="logo">
-                    <h1 class="logo__text">nikita.rokhlin</h1>
-                </a>
-
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="/portfolio.html" class="nav__link">Портфолио</a></li>
-                        <li class="nav__item"><a href="/blog.html" class="nav__link">Мой блог</a></li>
-                        <li class="nav__item"><a href="/contact.html" class="nav__link">Контакты</a></li>
-                    </ul>
-                </nav>
-
-                <button class="btn bth__header">Меню</button>
-            </div>
-        </div>
-    </header>
-
     <!--                          MAIN                    -->
 
     <section class="questionnaire">
-        <div class="container">
-            <form action="#" class="questionnaire" method="POST">
-                <h3>1. О проекте</h3>
-                <label>Название проекта / бренда</label>
-                <input type="text" name="project_name" placeholder="Например: «Кофейня у дома»">
+        <div class="container questionnaire__container">
 
-                <label>Сфера деятельности</label>
-                <input type="text" name="industry" placeholder="Например: «Кофейня, общепит»">
+            <h1 class="questionnaire__title">Анкета</h1>
+            <form class="questionnaire__form" action="#" class="questionnaire" method="POST">
+                <h3 class="questionnaire__subtitle">1.О проекте</h3>
+                <label class="label__heading">1.1.Название проекта / бренда</label>
+                <input class="questionnaire__text" type="text" name="project_name" placeholder="Текстовое поле">
 
-                <h3>2. Структура и наполнение</h3>
-                <label>Какие страницы нужны?</label>
-                <input type="text" name="pages" placeholder="Главная, услуги, контакты...">
+                <label class="label__heading">1.2.Чем занимается компания / частное лицо</label>
+                <input class="questionnaire__text" type="text" name="industry" placeholder="Текстовое поле">
 
-                <label>У вас есть готовые тексты?</label>
-                <select name="texts">
-                    <option value="yes">Да</option>
-                    <option value="partially">Частично</option>
-                    <option value="no">Нет</option>
+
+                <label class="label__heading">1.3.Основная цель сайта?</label>
+                <select class="questionnaire__text" name="texts">
+                    <option value="yes">Продажи товаров/услуг</option>
+                    <option value="partially">Портфолио / презентация работ
+                    <option>
+                    <option value="no">Информирование / новости</option>
+                    <option value="no">Бронирование / запись онлайн</option>
+                    <option value="no">Личный бренд / блог, другое</option>
                 </select>
-                <!-- Другие поля... -->
+
+
+                <label class="label__heading">1.4.Какие сайты вам нравятся?<label>
+                        <input class="questionnaire__text" size="25" type="text" name="industry"
+                            placeholder="2-5 ссылок через запятую">
+                        <button class="btn__questionnaire" type="submit">Сохранить данные</button>
+
+
+
+                        <h3 class="questionnaire__subtitle">2.Структура и наполнение</h3>
+                        <label class="label__heading">2.1.Многостраничный сайт/Лендинг?</label>
+                        <select class="questionnaire__text" name="texts">
+                            <option value="yes">Многостраничный сайт</option>
+                            <option value="partially">Лендинг
+                            <option>
+                        </select>
+
+                        <label for="checked" class="label__heading">2.2.Какие разделы нужны?</label>
+                        <!-- Список чекбоксов -->
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">Главная</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Услуги</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Цены</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="portfolio">
+                                <span class="form__checkbox-text">Портфолио</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="about">
+                                <span class="form__checkbox-text">О нас</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="contacts">
+                                <span class="form__checkbox-text">Контакты</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="blog">
+                                <span class="form__checkbox-text">Блог</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="catalog">
+                                <span class="form__checkbox-text">Каталог</span>
+                            </label>
+                            <input class="questionnaire__text" size="25" type="text" name="industry"
+                                placeholder="Другое">
+                        </div>
+
+
+
+
+
+                        <label class="label__heading">2.3.Сколько блоков нужно на главной странице?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">1</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">2</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">3</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="portfolio">
+                                <span class="form__checkbox-text">4</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="about">
+                                <span class="form__checkbox-text">5</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="contacts">
+                                <span class="form__checkbox-text">6</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="blog">
+                                <span class="form__checkbox-text">7</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="catalog">
+                                <span class="form__checkbox-text">8</span>
+                            </label>
+                            <input class="questionnaire__text" size="25" type="text" name="industry"
+                                placeholder="Другое">
+                        </div>
+
+
+                        <label class="label__heading">2.4.У вас есть готовые тексты для сайта</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">Да всё есть</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Частично, нужно помочь с редактированием</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет, нужна полная помощь с текстами</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">2.5.Нужна ли форма обратной связи?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">Да, простая (имя, телефон, сообщение)</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Да, расширенная (с выбором услуги, файлами)</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет, пока не нужно</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Не знаю, посоветуйте</span>
+                            </label>
+                        </div>
+
+                        <h3 class="questionnaire__subtitle">3.Дизайн и стиль</h3>
+
+                        <label class="label__heading">3.1. Есть ли у вас логотип?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">Да</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Нет</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет, нужна помощь с созданием</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">3.2. Есть ли фирменные цвета?</label>
+                        <div class="checkbox-group">
+                            <input class="questionnaire__text" type="text" name="project_name"
+                                placeholder="Да: Текстовое поле">
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Нет, выбираем вместе</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет, полагаюсь на ваш вкус</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">3.3. Какой стиль вам ближе?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">Строгий / деловой</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Креативный / нестандартный</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Современный / минимализм</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="home">
+                                <span class="form__checkbox-text">Классический / консервативный</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Тёмный (dark)</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Светлый (light)</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Не знаю, посоветуйте</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">3.4. Есть ли сайты-примеры, на которые вы хотите
+                            ориентироваться?</label>
+
+                        <input class="questionnaire__text" type="text" name="industry" placeholder="Через запятую">
+                        <button class="btn__questionnaire" type="submit">Сохранить данные</button>
+
+                        <h3 class="questionnaire__subtitle">4.Функционал и технические детали</h3>
+
+                        <label class="label__heading">4.1. Нужна ли вам админ-панель, чтобы самим редактировать
+                            контент?</label>
+                        <div class="checkbox-group">
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Да</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Не знаю, посоветуйте</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">4.2. Нужен ли каталог / корзина / онлайн-оплата?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Только каталог (без оплаты)</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Каталог + корзина + оплата</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет, не нужно</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">4.3. Есть ли у вас хостинг и домен?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Да, всё есть</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Есть домен, хостинга нет</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Нет, нужна помощь</span>
+                            </label>
+
+                        </div>
+
+                        <label class="label__heading">4.4. Какие устройства должны поддерживаться?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">Компьютер</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Планшет</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Телефон</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Все устройства (адаптивный дизайн)</span>
+                            </label>
+
+                        </div>
+
+                        <h3 class="questionnaire__subtitle">5.Бюджет и сроки</h3>
+
+                        <label class="label__heading">5.1. Какой бюджет вы рассматриваете на проект?</label>
+                        <div class="checkbox-group">
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                <span class="form__checkbox-text">До 10 000 ₽</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">10 000 – 20 000 ₽</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">20 000 – 40 000 ₽</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Больше 40 000 ₽</span>
+                            </label>
+
+                            <label class="form__checkbox-label">
+                                <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                <span class="form__checkbox-text">Гибко, обсуждаемо</span>
+                            </label>
+
+                            <label class="label__heading">5.2. Какие сроки вас устраивают?</label>
+                            <div class="checkbox-group">
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                    <span class="form__checkbox-text">До 1 недели</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">1–2 недели</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">1 месяц</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">Гибко, обсуждаемо</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">Есть жёсткий дедлайн</span>
+                                </label>
+
+                                <h3 class="questionnaire__subtitle">6. Дополнительно</h3>
+
+                                <label class="label__heading">6.1.  Кто ваши основные конкуренты?</label>
+                                <input class="questionnaire__text" type="text" name="project_name"
+                                    placeholder="Текстовое поле">
+
+                                    <label class="label__heading">6.2.  Кто ваша целевая аудитория?</label>
+                            <div class="checkbox-group">
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="services">
+                                    <span class="form__checkbox-text">Физические лица</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">Бизнес (B2B)</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">Молодёжь</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">Взрослая аудитория</span>
+                                </label>
+
+                                <label class="form__checkbox-label">
+                                    <input class="form__checkbox" type="checkbox" name="sections[]" value="prices">
+                                    <span class="form__checkbox-text">Не знаю, хочу обсудить</span>
+                                </label>
+
+                                <label class="label__heading">6.3.  Есть ли что-то, что должно быть на сайте обязательно?</label>
+                                <input class="questionnaire__text" type="text" name="project_name"
+                                    placeholder="Текстовое поле">
+
+                                    <label class="label__heading">6.3.  Комментарии и пожелания</label>
+                                <input class="questionnaire__text" type="text" name="project_name"
+                                    placeholder="Текстовое поле">
             </form>
         </div>
     </section>
 
-
-    <footer class="footer">
-        <div class="container footer__container">
-            <!-- ===== ВЕРХНЯЯ ЧАСТЬ: Соцсети + Контакты ===== -->
-            <div class="left__card">
-                <div class="footer__top">
-                    <!-- Социальные сети -->
-                    <ul class="footer__social" aria-label="Социальные сети">
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M28.7606 0H15.2636C2.9304 0 0 2.9326 0 15.2394V28.7386C0 41.0674 2.9106 44 15.2394 44H28.7386C41.0674 44 44 41.0894 44 28.7606V15.2636C44 2.9304 41.0894 0 28.7606 0ZM35.5212 31.394H32.3114C31.097 31.394 30.7318 30.4106 28.5538 28.2326C26.653 26.4 25.85 26.1712 25.3682 26.1712C24.7038 26.1712 24.5212 26.3538 24.5212 27.2712V30.1576C24.5212 30.9386 24.2682 31.3962 22.2288 31.3962C20.2499 31.2618 18.3311 30.6599 16.63 29.6399C14.9289 28.6199 13.494 27.211 12.4432 25.5288C9.94917 22.4279 8.21486 18.7868 7.3788 14.8962C7.3788 14.4144 7.5614 13.9788 8.4788 13.9788H11.6886C12.5136 13.9788 12.8106 14.3462 13.1318 15.1932C14.6894 19.778 17.347 23.7644 18.425 23.7644C18.8386 23.7644 19.019 23.5818 19.019 22.55V17.8288C18.8826 15.675 17.7386 15.4924 17.7386 14.7136C17.7533 14.5082 17.8474 14.3166 18.001 14.1794C18.1546 14.0422 18.3556 13.9703 18.5614 13.9788H23.6038C24.2924 13.9788 24.5212 14.322 24.5212 15.147V21.5182C24.5212 22.2068 24.8182 22.4356 25.025 22.4356C25.4386 22.4356 25.7576 22.2068 26.5144 21.45C28.1399 19.4677 29.4679 17.2592 30.4568 14.894C30.5585 14.6103 30.7499 14.3675 31.002 14.2024C31.2541 14.0372 31.5531 13.9587 31.8538 13.9788H35.0636C36.025 13.9788 36.2296 14.4606 36.025 15.147C34.858 17.7616 33.4138 20.2434 31.7174 22.55C31.372 23.078 31.2334 23.353 31.7174 23.9712C32.0364 24.453 33.1606 25.3924 33.9174 26.2856C35.0168 27.383 35.93 28.6521 36.6212 30.0432C36.8962 30.9364 36.4364 31.394 35.5212 31.394Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M15.488 42.988C17.6 43.626 19.734 44 22 44C27.8348 44 33.4305 41.6822 37.5564 37.5564C41.6822 33.4305 44 27.8348 44 22C44 19.1109 43.431 16.2501 42.3254 13.581C41.2197 10.9118 39.5992 8.48654 37.5564 6.44365C35.5135 4.40076 33.0882 2.78025 30.419 1.67465C27.7499 0.569047 24.8891 0 22 0C19.1109 0 16.2501 0.569047 13.581 1.67465C10.9118 2.78025 8.48654 4.40076 6.44365 6.44365C2.31785 10.5695 0 16.1652 0 22C0 31.35 5.874 39.38 14.168 42.548C13.97 40.832 13.772 37.994 14.168 36.036L16.698 25.168C16.698 25.168 16.06 23.892 16.06 21.868C16.06 18.832 17.952 16.566 20.108 16.566C22 16.566 22.88 17.952 22.88 19.734C22.88 21.626 21.626 24.332 20.988 26.928C20.614 29.084 22.132 30.976 24.332 30.976C28.248 30.976 31.284 26.796 31.284 20.9C31.284 15.62 27.5 12.012 22.066 12.012C15.862 12.012 12.21 16.632 12.21 21.494C12.21 23.386 12.826 25.3 13.838 26.554C14.036 26.686 14.036 26.862 13.97 27.192L13.332 29.59C13.332 29.964 13.09 30.096 12.716 29.832C9.9 28.6 8.272 24.596 8.272 21.362C8.272 14.41 13.2 8.096 22.704 8.096C30.272 8.096 36.168 13.53 36.168 20.746C36.168 28.314 31.482 34.386 24.772 34.386C22.638 34.386 20.548 33.242 19.8 31.9L18.326 37.114C17.82 39.006 16.434 41.536 15.488 43.054V42.988Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.0022 15.4C20.2518 15.4 18.573 16.0954 17.3353 17.3331C16.0976 18.5708 15.4022 20.2496 15.4022 22C15.4022 23.7504 16.0976 25.4292 17.3353 26.6669C18.573 27.9046 20.2518 28.6 22.0022 28.6C23.7526 28.6 25.4314 27.9046 26.6691 26.6669C27.9068 25.4292 28.6022 23.7504 28.6022 22C28.6022 20.2496 27.9068 18.5708 26.6691 17.3331C25.4314 16.0954 23.7526 15.4 22.0022 15.4ZM22.0022 11C24.9196 11 27.7175 12.1589 29.7804 14.2218C31.8433 16.2847 33.0022 19.0826 33.0022 22C33.0022 24.9174 31.8433 27.7153 29.7804 29.7782C27.7175 31.8411 24.9196 33 22.0022 33C19.0848 33 16.2869 31.8411 14.224 29.7782C12.1611 27.7153 11.0022 24.9174 11.0022 22C11.0022 19.0826 12.1611 16.2847 14.224 14.2218C16.2869 12.1589 19.0848 11 22.0022 11ZM36.3022 10.45C36.3022 11.1793 36.0125 11.8788 35.4967 12.3945C34.981 12.9103 34.2815 13.2 33.5522 13.2C32.8229 13.2 32.1234 12.9103 31.6077 12.3945C31.0919 11.8788 30.8022 11.1793 30.8022 10.45C30.8022 9.72065 31.0919 9.02118 31.6077 8.50546C32.1234 7.98973 32.8229 7.7 33.5522 7.7C34.2815 7.7 34.981 7.98973 35.4967 8.50546C36.0125 9.02118 36.3022 9.72065 36.3022 10.45ZM22.0022 4.4C16.5594 4.4 15.6706 4.4154 13.1384 4.5276C11.4136 4.609 10.2564 4.84 9.1828 5.258C8.28483 5.58882 7.47279 6.1174 6.8068 6.8046C6.1188 7.47036 5.58946 8.28242 5.258 9.1806C4.84 10.2586 4.609 11.4136 4.5298 13.1362C4.4154 15.565 4.4 16.4142 4.4 22C4.4 27.445 4.4154 28.3316 4.5276 30.8638C4.609 32.5864 4.84 33.7458 5.2558 34.8172C5.6298 35.7742 6.0698 36.4628 6.8002 37.1932C7.5416 37.9324 8.2302 38.3746 9.1762 38.7398C10.263 39.16 11.4202 39.3932 13.1362 39.4724C15.565 39.5868 16.4142 39.6 22 39.6C27.445 39.6 28.3316 39.5846 30.8638 39.4724C32.5842 39.391 33.7414 39.16 34.8172 38.7442C35.7152 38.4134 36.5272 37.8848 37.1932 37.1976C37.9346 36.4584 38.3768 35.7698 38.742 34.8216C39.16 33.7392 39.3932 32.582 39.4724 30.8616C39.5868 28.435 39.6 27.5836 39.6 22C39.6 16.5572 39.5846 15.6684 39.4724 13.1362C39.391 11.4158 39.1578 10.2542 38.742 9.1806C38.4112 8.28263 37.8826 7.47059 37.1954 6.8046C36.5296 6.1166 35.7176 5.58726 34.8194 5.2558C33.7414 4.8378 32.5842 4.6068 30.8638 4.5276C28.4372 4.4132 27.588 4.4 22 4.4M22 0C27.9774 0 28.7232 0.0219999 31.0706 0.132C33.4114 0.242 35.0086 0.6094 36.41 1.155C37.862 1.7138 39.0852 2.4706 40.3084 3.6916C41.4275 4.79101 42.2932 6.12144 42.845 7.59C43.3884 8.9914 43.758 10.5886 43.868 12.9316C43.9714 15.2768 44 16.0226 44 22C44 27.9774 43.978 28.7232 43.868 31.0684C43.758 33.4136 43.3884 35.0064 42.845 36.41C42.2932 37.8786 41.4275 39.209 40.3084 40.3084C39.209 41.4275 37.8786 42.2932 36.41 42.845C35.0086 43.3884 33.4114 43.758 31.0706 43.868C28.7232 43.9714 27.9774 44 22 44C16.0226 44 15.2768 43.978 12.9294 43.868C10.5886 43.758 8.9936 43.3884 7.59 42.845C6.12144 42.2932 4.79101 41.4275 3.6916 40.3084C2.57247 39.209 1.7068 37.8786 1.155 36.41C0.6094 35.0086 0.242 33.4114 0.132 31.0684C0.0263999 28.7232 0 27.9774 0 22C0 16.0226 0.0219999 15.2768 0.132 12.9316C0.242 10.5864 0.6094 8.9936 1.155 7.59C1.7068 6.12144 2.57247 4.79101 3.6916 3.6916C4.79101 2.57247 6.12144 1.7068 7.59 1.155C8.9914 0.6094 10.5864 0.242 12.9294 0.132C15.279 0.0285999 16.0248 0 22.0022 0"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="VK">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22 0C19.1109 0 16.2501 0.583175 13.581 1.71623C10.9118 2.84928 8.48654 4.51002 6.44365 6.60363C2.31785 10.8319 0 16.5666 0 22.5462C0 32.5116 6.314 40.9664 15.048 43.9651C16.148 44.1454 16.5 43.4465 16.5 42.8378V39.0275C10.406 40.3802 9.108 36.0063 9.108 36.0063C8.096 33.3909 6.666 32.692 6.666 32.692C4.664 31.2941 6.82 31.3392 6.82 31.3392C9.02 31.497 10.186 33.6615 10.186 33.6615C12.1 37.0885 15.334 36.0739 16.588 35.5328C16.786 34.0673 17.358 33.0753 17.974 32.5116C13.09 31.948 7.964 30.009 7.964 21.4189C7.964 18.9163 8.8 16.9096 10.23 15.3089C10.01 14.7452 9.24 12.4004 10.45 9.35667C10.45 9.35667 12.298 8.74792 16.5 11.6564C18.238 11.1604 20.13 10.9124 22 10.9124C23.87 10.9124 25.762 11.1604 27.5 11.6564C31.702 8.74792 33.55 9.35667 33.55 9.35667C34.76 12.4004 33.99 14.7452 33.77 15.3089C35.2 16.9096 36.036 18.9163 36.036 21.4189C36.036 30.0315 30.888 31.9254 25.982 32.4891C26.774 33.188 27.5 34.5633 27.5 36.6601V42.8378C27.5 43.4465 27.852 44.168 28.974 43.9651C37.708 40.9439 44 32.5116 44 22.5462C44 19.5854 43.431 16.6536 42.3254 13.9181C41.2197 11.1827 39.5992 8.69724 37.5564 6.60363C35.5135 4.51002 33.0882 2.84928 30.419 1.71623C27.7499 0.583175 24.8891 0 22 0Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22 0C9.856 0 0 9.856 0 22C0 34.144 9.856 44 22 44C34.144 44 44 34.144 44 22C44 9.856 34.144 0 22 0ZM32.208 14.96C31.878 18.436 30.448 26.884 29.722 30.778C29.414 32.428 28.798 32.978 28.226 33.044C26.95 33.154 25.982 32.208 24.75 31.394C22.814 30.118 21.714 29.326 19.844 28.094C17.666 26.664 19.074 25.872 20.328 24.596C20.658 24.266 26.29 19.14 26.4 18.678C26.4153 18.608 26.4132 18.5354 26.3941 18.4664C26.3749 18.3974 26.3392 18.3341 26.29 18.282C26.158 18.172 25.982 18.216 25.828 18.238C25.63 18.282 22.55 20.328 16.544 24.376C15.664 24.97 14.872 25.278 14.168 25.256C13.376 25.234 11.88 24.816 10.758 24.442C9.372 24.002 8.294 23.76 8.382 22.99C8.426 22.594 8.976 22.198 10.01 21.78C16.434 18.986 20.702 17.138 22.836 16.258C28.952 13.706 30.206 13.266 31.042 13.266C31.218 13.266 31.636 13.31 31.9 13.53C32.12 13.706 32.186 13.948 32.208 14.124C32.186 14.256 32.23 14.652 32.208 14.96Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- Контакты -->
-                    <div class="footer__contacts">
-                        <a href="mailto:layoutdesignnerroh@mail.ru" class="footer__email footer__text">
-                            layoutdesignnerroh@mail.ru
-                        </a>
-                    </div>
-                </div>
-
-                <!-- ===== СРЕДНЯЯ ЧАСТЬ: Навигация ===== -->
-
-
-                <!-- ===== НИЖНЯЯ ЧАСТЬ: Юридическая информация ===== -->
-                <div class="footer__legal">
-                    <a href="/privacy-policy/" class="footer__legal-link footer__text nav__link">Политика
-                        конфиденциальности</a>
-                    <a href="/agreement/" class="footer__legal-link footer__text nav__link">Пользовательское
-                        соглашение</a>
-                </div>
-
-
-
-                <!-- ===== КОПИРАЙТ ===== -->
-                <div class="footer__copyright">
-                    <p class="footer__copy-text footer__text">© 2026 Никита Рохлин. Все права защищены.</p>
-                </div>
-            </div>
-
-            <nav class="footer__nav" aria-label="Навигация в подвале">
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item nav__link">
-                        <a href="/portfolio.html" class="footer__nav-link">Портфолио</a>
-                    </li>
-                    <li class="footer__nav-item nav__link">
-                        <a href="/blog.html" class="footer__nav-link">Мой блог</a>
-                    </li>
-                    <li class="footer__nav-item nav__link">
-                        <a href="/contact.html" class="footer__nav-link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-
 </body>
-
 </html>
+ 

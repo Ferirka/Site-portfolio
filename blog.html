@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="JS/blogCards.js" defer></script>
+     <script src="JS/blogCards.js" defer></script>
     <script src="JS/blogPage.js" defer></script>
+    <script src="JS/modalMenu.js" defer></script>
+    <script src="JS/UpArrow.js" defer></script>
+    <link rel="icon" href="data:,">
     <title>NIKROXL</title>
 </head>
 
 <body>
+
+<!-- ===== МОДАЛЬНОЕ ОКНО ДЛЯ МЕНЮ ===== -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="modal__close" id="modalClose">✕</button>
+        <nav class="modal__nav">
+            <ul class="modal__list">
+                <li class="modal__item"><a href="/portfolio.html" class="modal__link">Портфолио</a></li>
+                <li class="modal__item"><a href="/blog.html" class="modal__link">Мой блог</a></li>
+                <li class="modal__item"><a href="/contact.html" class="modal__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 
     <header class="header">
         <div class="container header__container">
@@ -121,10 +138,8 @@
 
                 <!-- ===== НИЖНЯЯ ЧАСТЬ: Юридическая информация ===== -->
                 <div class="footer__legal">
-                    <a href="/privacy-policy/" class="footer__legal-link footer__text nav__link">Политика
-                        конфиденциальности</a>
-                    <a href="/agreement/" class="footer__legal-link footer__text nav__link">Пользовательское
-                        соглашение</a>
+                    <a href="/privary.html" class="footer__legal-link footer__text nav__link">Политика конфиденциальности</a>
+                    <a href="/agreement.html" class="footer__legal-link footer__text nav__link">Пользовательское соглашение</a>
                 </div>
 
 
@@ -150,6 +165,13 @@
             </nav>
         </div>
     </footer>
+
+
+
+
+<button class="up__Arrow" id="UpArrow">
+
+</button>
 
 
 </body>
