@@ -1,40 +1,34 @@
-// Ждём загрузку DOM
+// js/form.js
 document.addEventListener('DOMContentLoaded', function() {
-
-    // Находим форму по классу (она есть у тебя)
+    // Находим форму по классу (она уже есть в HTML)
     const form = document.querySelector('.form__body');
-    if (!form) return; // Если формы нет, выходим
+    if (!form) return;
 
-    // Блок для сообщения об успехе/ошибке (можно создать динамически)
+    // Блок для сообщения об успехе/ошибке (добавляем динамически)
     const statusBlock = document.createElement('div');
     statusBlock.className = 'form__status';
     form.appendChild(statusBlock);
 
-    // Слушаем отправку формы
     form.addEventListener('submit', function(event) {
-
-        // Отменяем перезагрузку страницы
         event.preventDefault();
 
-        // Собираем данные из полей
         const formData = new FormData(form);
 
-        // Отправляем на сервер
         fetch('mail.php', {
             method: 'POST',
             body: formData
         })
         .then(response => response.text())
         .then(data => {
-            if (data === 'success') {
-                statusBlock.innerHTML = '<p style="color: #B9FF57; font-weight: 600;">✅ Ваше сообщение отправлено!</p>';
-                form.reset(); // Очищаем поля
+            if (data.trim() === 'success') {
+                statusBlock.innerHTML = '<p style="color: #7ECD0F; font-weight: bold;">✅ Сообщение отправлено!</p>';
+                form.reset();
             } else {
-                statusBlock.innerHTML = '<p style="color: #ff6b6b; font-weight: 600;">❌ Ошибка отправки. Попробуйте позже.</p>';
+                statusBlock.innerHTML = '<p style="color: #ff6b6b; font-weight: bold;">❌ Ошибка. Попробуйте позже.</p>';
             }
         })
         .catch(error => {
-            statusBlock.innerHTML = '<p style="color: #ff6b6b; font-weight: 600;">❌ Ошибка соединения. Проверьте интернет.</p>';
+            statusBlock.innerHTML = '<p style="color: #ff6b6b; font-weight: bold;">❌ Ошибка соединения.</p>';
             console.error('Ошибка:', error);
         });
     });

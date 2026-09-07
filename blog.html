@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
      <script src="JS/blogCards.js" defer></script>
     <script src="JS/blogPage.js" defer></script>
     <script src="JS/modalMenu.js" defer></script>
@@ -21,9 +22,9 @@
         <button class="modal__close" id="modalClose">✕</button>
         <nav class="modal__nav">
             <ul class="modal__list">
-                <li class="modal__item"><a href="/portfolio.html" class="modal__link">Портфолио</a></li>
-                <li class="modal__item"><a href="/blog.html" class="modal__link">Мой блог</a></li>
-                <li class="modal__item"><a href="/contact.html" class="modal__link">Контакты</a></li>
+                <li class="modal__item"><a href="portfolio.html" class="modal__link">Портфолио</a></li>
+                <li class="modal__item"><a href="blog.html" class="modal__link">Мой блог</a></li>
+                <li class="modal__item"><a href="contact.html" class="modal__link">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -38,9 +39,9 @@
 
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="/portfolio.html" class="nav__link">Портфолио</a></li>
-                        <li class="nav__item"><a href="/blog.html" class="nav__link">Мой блог</a></li>
-                        <li class="nav__item"><a href="/contact.html" class="nav__link">Контакты</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="nav__link">Портфолио</a></li>
+                        <li class="nav__item"><a href="blog.html" class="nav__link">Мой блог</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -74,7 +75,7 @@
                     <!-- Социальные сети -->
                     <ul class="footer__social" aria-label="Социальные сети">
                         <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                            <a href="https://vk.ru/nrokhlin864" target="_blank" rel="noopener noreferrer" aria-label="VK">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -84,7 +85,7 @@
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <a href="https://pin.it/2pF9a2N3l" target="_blank" rel="noopener noreferrer" aria-label="pinterest">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -93,18 +94,9 @@
                                 </svg>
                             </a>
                         </li>
+                        
                         <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22.0022 15.4C20.2518 15.4 18.573 16.0954 17.3353 17.3331C16.0976 18.5708 15.4022 20.2496 15.4022 22C15.4022 23.7504 16.0976 25.4292 17.3353 26.6669C18.573 27.9046 20.2518 28.6 22.0022 28.6C23.7526 28.6 25.4314 27.9046 26.6691 26.6669C27.9068 25.4292 28.6022 23.7504 28.6022 22C28.6022 20.2496 27.9068 18.5708 26.6691 17.3331C25.4314 16.0954 23.7526 15.4 22.0022 15.4ZM22.0022 11C24.9196 11 27.7175 12.1589 29.7804 14.2218C31.8433 16.2847 33.0022 19.0826 33.0022 22C33.0022 24.9174 31.8433 27.7153 29.7804 29.7782C27.7175 31.8411 24.9196 33 22.0022 33C19.0848 33 16.2869 31.8411 14.224 29.7782C12.1611 27.7153 11.0022 24.9174 11.0022 22C11.0022 19.0826 12.1611 16.2847 14.224 14.2218C16.2869 12.1589 19.0848 11 22.0022 11ZM36.3022 10.45C36.3022 11.1793 36.0125 11.8788 35.4967 12.3945C34.981 12.9103 34.2815 13.2 33.5522 13.2C32.8229 13.2 32.1234 12.9103 31.6077 12.3945C31.0919 11.8788 30.8022 11.1793 30.8022 10.45C30.8022 9.72065 31.0919 9.02118 31.6077 8.50546C32.1234 7.98973 32.8229 7.7 33.5522 7.7C34.2815 7.7 34.981 7.98973 35.4967 8.50546C36.0125 9.02118 36.3022 9.72065 36.3022 10.45ZM22.0022 4.4C16.5594 4.4 15.6706 4.4154 13.1384 4.5276C11.4136 4.609 10.2564 4.84 9.1828 5.258C8.28483 5.58882 7.47279 6.1174 6.8068 6.8046C6.1188 7.47036 5.58946 8.28242 5.258 9.1806C4.84 10.2586 4.609 11.4136 4.5298 13.1362C4.4154 15.565 4.4 16.4142 4.4 22C4.4 27.445 4.4154 28.3316 4.5276 30.8638C4.609 32.5864 4.84 33.7458 5.2558 34.8172C5.6298 35.7742 6.0698 36.4628 6.8002 37.1932C7.5416 37.9324 8.2302 38.3746 9.1762 38.7398C10.263 39.16 11.4202 39.3932 13.1362 39.4724C15.565 39.5868 16.4142 39.6 22 39.6C27.445 39.6 28.3316 39.5846 30.8638 39.4724C32.5842 39.391 33.7414 39.16 34.8172 38.7442C35.7152 38.4134 36.5272 37.8848 37.1932 37.1976C37.9346 36.4584 38.3768 35.7698 38.742 34.8216C39.16 33.7392 39.3932 32.582 39.4724 30.8616C39.5868 28.435 39.6 27.5836 39.6 22C39.6 16.5572 39.5846 15.6684 39.4724 13.1362C39.391 11.4158 39.1578 10.2542 38.742 9.1806C38.4112 8.28263 37.8826 7.47059 37.1954 6.8046C36.5296 6.1166 35.7176 5.58726 34.8194 5.2558C33.7414 4.8378 32.5842 4.6068 30.8638 4.5276C28.4372 4.4132 27.588 4.4 22 4.4M22 0C27.9774 0 28.7232 0.0219999 31.0706 0.132C33.4114 0.242 35.0086 0.6094 36.41 1.155C37.862 1.7138 39.0852 2.4706 40.3084 3.6916C41.4275 4.79101 42.2932 6.12144 42.845 7.59C43.3884 8.9914 43.758 10.5886 43.868 12.9316C43.9714 15.2768 44 16.0226 44 22C44 27.9774 43.978 28.7232 43.868 31.0684C43.758 33.4136 43.3884 35.0064 42.845 36.41C42.2932 37.8786 41.4275 39.209 40.3084 40.3084C39.209 41.4275 37.8786 42.2932 36.41 42.845C35.0086 43.3884 33.4114 43.758 31.0706 43.868C28.7232 43.9714 27.9774 44 22 44C16.0226 44 15.2768 43.978 12.9294 43.868C10.5886 43.758 8.9936 43.3884 7.59 42.845C6.12144 42.2932 4.79101 41.4275 3.6916 40.3084C2.57247 39.209 1.7068 37.8786 1.155 36.41C0.6094 35.0086 0.242 33.4114 0.132 31.0684C0.0263999 28.7232 0 27.9774 0 22C0 16.0226 0.0219999 15.2768 0.132 12.9316C0.242 10.5864 0.6094 8.9936 1.155 7.59C1.7068 6.12144 2.57247 4.79101 3.6916 3.6916C4.79101 2.57247 6.12144 1.7068 7.59 1.155C8.9914 0.6094 10.5864 0.242 12.9294 0.132C15.279 0.0285999 16.0248 0 22.0022 0"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="VK">
+                            <a href="https://github.com/Ferirka" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                 <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -113,16 +105,7 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer__social-item">
-                            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M22 0C9.856 0 0 9.856 0 22C0 34.144 9.856 44 22 44C34.144 44 44 34.144 44 22C44 9.856 34.144 0 22 0ZM32.208 14.96C31.878 18.436 30.448 26.884 29.722 30.778C29.414 32.428 28.798 32.978 28.226 33.044C26.95 33.154 25.982 32.208 24.75 31.394C22.814 30.118 21.714 29.326 19.844 28.094C17.666 26.664 19.074 25.872 20.328 24.596C20.658 24.266 26.29 19.14 26.4 18.678C26.4153 18.608 26.4132 18.5354 26.3941 18.4664C26.3749 18.3974 26.3392 18.3341 26.29 18.282C26.158 18.172 25.982 18.216 25.828 18.238C25.63 18.282 22.55 20.328 16.544 24.376C15.664 24.97 14.872 25.278 14.168 25.256C13.376 25.234 11.88 24.816 10.758 24.442C9.372 24.002 8.294 23.76 8.382 22.99C8.426 22.594 8.976 22.198 10.01 21.78C16.434 18.986 20.702 17.138 22.836 16.258C28.952 13.706 30.206 13.266 31.042 13.266C31.218 13.266 31.636 13.31 31.9 13.53C32.12 13.706 32.186 13.948 32.208 14.124C32.186 14.256 32.23 14.652 32.208 14.96Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li>
+                       
                     </ul>
 
                     <!-- Контакты -->
@@ -138,8 +121,8 @@
 
                 <!-- ===== НИЖНЯЯ ЧАСТЬ: Юридическая информация ===== -->
                 <div class="footer__legal">
-                    <a href="/privary.html" class="footer__legal-link footer__text nav__link">Политика конфиденциальности</a>
-                    <a href="/agreement.html" class="footer__legal-link footer__text nav__link">Пользовательское соглашение</a>
+                    <a href="privary.html" class="footer__legal-link footer__text nav__link">Политика конфиденциальности</a>
+                    <a href="agreement.html" class="footer__legal-link footer__text nav__link">Пользовательское соглашение</a>
                 </div>
 
 
@@ -153,13 +136,13 @@
             <nav class="footer__nav" aria-label="Навигация в подвале">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item nav__link">
-                        <a href="/portfolio.html" class="footer__nav-link">Портфолио</a>
+                        <a href="portfolio.html" class="footer__nav-link">Портфолио</a>
                     </li>
                     <li class="footer__nav-item nav__link">
-                        <a href="/blog.html" class="footer__nav-link">Мой блог</a>
+                        <a href="blog.html" class="footer__nav-link">Мой блог</a>
                     </li>
                     <li class="footer__nav-item nav__link">
-                        <a href="/contact.html" class="footer__nav-link">Контакты</a>
+                        <a href="contact.html" class="footer__nav-link">Контакты</a>
                     </li>
                 </ul>
             </nav>

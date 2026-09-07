@@ -1,25 +1,52 @@
 <?php
+// Подключаем PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Пути к файлам PHPMailer (ОБЯЗАТЕЛЬНО ПРОВЕРЬ)
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    // Получаем данные из формы (name из HTML)
+    // Проверка полей
+    if (empty($_POST['username']) || empty($_POST['email']) || empty($_POST['message'])) {
+        echo "error";
+        exit;
+    }
+
     $name = $_POST['username'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    // Настройки письма
-    $to = "layoutdesignnerroh@mail.ru"; // ТВОЯ ПОЧТА
-    $subject = "Новое сообщение с сайта";
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+    $mail = new PHPMailer(true);
 
-    $full_message = "Имя: $name\nEmail: $email\nСообщение:\n$message";
+    try {
+        // Настройки SMTP (используем Mail.ru)
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.mail.ru';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'layoutdesignnerroh@mail.ru'; // Твоя почта
+        $mail->Password   = 'Hen1!a7ss864';       // Пароль от почты!
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
 
-    // Отправляем письмо
-    if (mail($to, $subject, $full_message, $headers)) {
+        // От кого и кому
+        $mail->setFrom('layoutdesignnerroh@mail.ru', 'Сайт');
+        $mail->addAddress('layoutdesignnerroh@mail.ru'); // Куда письмо
+
+        // Содержимое
+        $mail->CharSet = 'UTF-8';
+        $mail->Subject = 'Новое сообщение с сайта';
+        $mail->Body    = "Имя: $name\nEmail: $email\nСообщение:\n$message";
+
+        $mail->send();
         echo "success";
-    } else {
+    } catch (Exception $e) {
         echo "error";
+        // Ошибку можно посмотреть в логах хостинга
+        error_log("Ошибка PHPMailer: {$mail->ErrorInfo}");
     }
 }
 ?>

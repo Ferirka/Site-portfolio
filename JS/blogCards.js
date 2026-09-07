@@ -9,9 +9,12 @@ function blogCards(data, containerId) {
 
   data.blogBlock.forEach(blog => {
         htmlString += `<article class="blog__card portfolio__card">
-        <h3 class="blog__heading portfolio__heading">${blog.title}</h3>
-        <p class="blog__heading portfolio__paragraph">${blog.description}</p>
-        <a href="#" class="btn__blog btn__main">${blog.link}</a>
+        <div class="blog__heading">
+            <h1 class="blog__title">${blog.title}</h1>
+            <time datetime="02.09.2026, 14:15" class>${blog.time}</time>
+        </div>
+
+        <h2 class="blog__subtitle">${blog.subtitle}</h2>
         </article>`
         
     });

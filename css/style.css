@@ -793,7 +793,6 @@ img {
     align-items: center;
     }
 
-
     .form__title {
         white-space: wrap;
     }
@@ -802,7 +801,6 @@ img {
         width: 100%;
         max-width: 300px;
         padding: 30px 15px 40px;
-
     }
 
     .form__body {
