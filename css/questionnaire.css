@@ -3,9 +3,9 @@ body {
 }
 
 .questionnaire__form {
- display: flex;
- flex-direction: column;
- justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -48,7 +48,6 @@ body {
     color: white;
     background-color: #323232;
     outline: none;
-    
 }
 
 .questionnaire__text:last-child {
@@ -56,12 +55,8 @@ body {
 }
 
 .checkbox-group {
-display: flex;
-flex-direction: column;
-}
-
-.form__checkbox-label {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .btn__questionnaire {
@@ -75,6 +70,3 @@ flex-direction: column;
     font-family: 'NotoSans';
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
 }
-
-
-

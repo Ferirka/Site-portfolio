@@ -146,8 +146,6 @@ img {
     margin: 0;
     display: flex;
     flex-direction: row;
-
-
 }
 
 .nav__item {
@@ -245,7 +243,6 @@ img {
     gap: 90px;
 }
 
-
 .hero__block {
     display: flex;
     flex-direction: column;
@@ -335,10 +332,9 @@ img {
     }
 
     .hero__img {
-    width: 410px;
-    max-height: 550px;
+        width: 410px;
+        max-height: 550px;
     }
-
 
 }
 
@@ -374,8 +370,8 @@ img {
     }
 
     .hero__img {
-    width: 330px;
-    height: 370px;
+        width: 330px;
+        height: 370px;
     }
 }
 
@@ -385,7 +381,7 @@ img {
     margin: 0;
     margin-bottom: 7.7rem;
     text-align: center;
-    
+
     font-size: 4.8rem;
     font-weight: 700;
 }
@@ -466,13 +462,11 @@ img {
 
     .cooperation__container {
         width: 100%;
-
     }
 
     .cooperation__list {
         padding: 0;
         padding-right: 20px;
-
     }
 
     .cooperation__text {
@@ -520,8 +514,7 @@ img {
     gap: 10px;
 }
 
-.price__list:last-child {
-}
+.price__list:last-child {}
 
 .price__card {
     display: flex;
@@ -538,7 +531,7 @@ img {
 .priceBlock__last {
     display: flex;
     flex-direction: column;
-   align-self: center;
+    align-self: center;
     width: 100%;
     max-width: 1260px;
     margin-bottom: 5.2rem;
@@ -565,8 +558,6 @@ img {
     white-space: wrap;
     font-family: 'AbhayaLibre';
 }
-
-
 
 .card__list {
     display: flex;
@@ -613,7 +604,6 @@ img {
 .strong__text {
     color: #B9FF57;
 }
-
 
 @media (max-width: 1023px) {
 
@@ -676,7 +666,7 @@ img {
     }
 
     .price__heading-last {
-        
+
         max-width: 200px;
         font-size: 2rem;
     }
@@ -684,7 +674,7 @@ img {
     .price__paragraph {
         max-width: 200px;
         font-size: 1.5rem;
-        
+
     }
 
     .price__prepayment {
@@ -722,8 +712,6 @@ img {
     font-weight: 700;
     font-family: 'AbhayaLibre';
 }
-
-.form__body {}
 
 .form__group {
     display: flex;
@@ -787,10 +775,10 @@ img {
     }
 
     .form__Card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .form__title {
@@ -927,15 +915,12 @@ img {
 
 /* PORTFOLIO */
 
-
-
 .portfolio__block {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 90px;
-
 }
 
 .portfolio__card {
@@ -980,10 +965,6 @@ img {
 .supportive__text:last-child {
     margin-bottom: 0;
 }
-
-
-
-.portfolio__card-text {}
 
 .portfolio__card-list {
     display: flex;
@@ -1039,10 +1020,8 @@ img {
     }
 
     .portfolio__paragraph {
-
         margin-bottom: 2.1rem;
         font-size: 2rem;
-
     }
 
     .supportive__text {
@@ -1058,7 +1037,6 @@ img {
     .portfolio__container {
         width: 100%;
     }
-
 
     .portfolio__block {
         justify-content: start;
@@ -1078,8 +1056,6 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .blog__block {
@@ -1094,8 +1070,6 @@ img {
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    
-
 }
 
 /* CONTACT */
@@ -1145,7 +1119,7 @@ img {
     }
 }
 
-/* JAVA SCRIPT */ 
+/* JAVA SCRIPT */
 
 /* ---------------- */
 
@@ -1155,7 +1129,6 @@ img {
     right: 30px;
     width: 70px;
     height: 70px;
-   
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -1163,19 +1136,17 @@ img {
     background-color: #7ECD0F;
 }
 
-.up__Arrow::after  {
- content: "\2b06"; 
- display: block;
- margin-bottom: 2px;
-font-size: 2.8rem;
-text-align: center;
- line-height: 1;
+.up__Arrow::after {
+    content: "\2b06";
+    display: block;
+    margin-bottom: 2px;
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 1;
 }
 
 
 /* POLITIKA VS APPROVAL */
-
-
 
 /* ===== МОДАЛЬНОЕ ОКНО ===== */
 /* Модальное окно — 100% работает */
@@ -1187,14 +1158,16 @@ text-align: center;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    display: none; /* по умолчанию скрыто */
+    display: none;
+    /* по умолчанию скрыто */
     justify-content: center;
     align-items: center;
     z-index: 9999;
 }
 
 .modal-overlay.active {
-    display: flex; /* появляется при клике */
+    display: flex;
+    /* появляется при клике */
 }
 
 .modal {
@@ -1203,7 +1176,8 @@ text-align: center;
     padding: 40px 30px;
     border-radius: 16px;
     max-width: 400px;
-    width: 90%; /* чтобы не вылезало за экран */
+    width: 90%;
+    /* чтобы не вылезало за экран */
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
 }
